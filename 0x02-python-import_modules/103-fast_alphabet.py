@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 import string
-print(*string.ascii_uppercase, sep='')
+print("{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}"
+      .format(*string.ascii_uppercase))
