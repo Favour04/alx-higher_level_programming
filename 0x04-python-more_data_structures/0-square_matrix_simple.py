@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     if matrix is None:
-        return matrix
+        return [[]]
     temp = []
     for i in matrix:
         k = 0
