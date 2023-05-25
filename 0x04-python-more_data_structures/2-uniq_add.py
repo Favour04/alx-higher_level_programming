@@ -6,7 +6,8 @@ def uniq_add(my_list=[]):
         if my_list[i] != my_list[n]:
             if i == 0:
                sums = my_list[i] + my_list[n]
-            sums += my_list[n]
+            else:
+                sums += my_list[n]
         n += 1
         i += 1
     return sums
