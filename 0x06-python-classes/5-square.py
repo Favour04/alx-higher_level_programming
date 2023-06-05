@@ -41,12 +41,11 @@ class Square:
 
         sqrArea = self.__size * self.__size
         return sqrArea
-    
+
     def my_print(self):
         """
             FUNCTION TO PRINT THE SQUARE
         """
-        
         for i in range(0, self.size):
             for j in range(0, self.size):
                 print("#", end='')
