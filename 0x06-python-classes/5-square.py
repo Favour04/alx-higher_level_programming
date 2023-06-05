@@ -46,6 +46,9 @@ class Square:
         """
             FUNCTION TO PRINT THE SQUARE
         """
+
+        if self.size == 0:
+            print('\n')
         for i in range(0, self.size):
             for j in range(0, self.size):
                 print("#", end='')
