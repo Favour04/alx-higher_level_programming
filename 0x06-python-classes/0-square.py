@@ -1,4 +1,9 @@
 #!/usr/bin/python3
-# python3 -c 'print(__import__("my_module").MyClass.__doc__)'
+"""
+Modle contianting the claass square
+"""
 class Square:
+    """
+    This is an empty class
+    """
     pass
