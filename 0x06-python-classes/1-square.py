@@ -10,4 +10,9 @@ class Square:
     """
 
     def __init__(self, size):
+        """
+            THIS FUNCTION INITIALIZES THE LEGNTH
+            SIZE OF THE SQUARE
+        """
+
         self.__size = size
