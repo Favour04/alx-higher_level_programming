@@ -77,13 +77,17 @@ class Square:
          #   raise TypeError('position must be a tuple of 2 positive integers')
         #if y < 0 or x < 0:
             #raise TypeError('position must be a tuple of 2 positive integers')
-
+        count = 0
         for i in range(0, self.size):
-           
+
             if self.position is not None and x != 0:
-                print(" " * x, end='')
+                if count > self.size - y:
+                    print("#" * x, end='')
+                else:
+                    print(" " * x, end='')
             
             for j in range(0, self.size):
                 print("#", end='')
+            count += 1
 
             print("")
