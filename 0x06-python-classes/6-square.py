@@ -73,7 +73,13 @@ class Square:
             print()
 
         x, y = self.position
+        count = 0
         for i in range(0, self.size):
+
             if self.position is not None and x != 0:
+                if count == 0 and y > 0:
+                    for i in range(y):
+                        print()
                 print(" " * x, end='')
             print("#" * self.size)
+            count += 1
