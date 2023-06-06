@@ -81,10 +81,7 @@ class Square:
         for i in range(0, self.size):
 
             if self.position is not None and x != 0:
-                if count > self.size - y:
-                    print("#" * x, end='')
-                else:
-                    print(" " * x, end='')
+                print(" " * x, end='')
             
             for j in range(0, self.size):
                 print("#", end='')
