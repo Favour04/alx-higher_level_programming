@@ -6,11 +6,11 @@ MODLE CONTAINING CLASS RECTANGLE
 
 
 class Rectangle:
+"""
+   Class containing the attributes of a
+   Square
 
-    """
-    Empty Class
-
-    """
+"""
 
     def __init__(self, width=0, height=0):
         self.height = height
