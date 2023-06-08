@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-
 """
 MODLE CONTAINING CLASS RECTANGLE
+
 """
 
 
@@ -11,7 +11,6 @@ class Rectangle:
    Square
 
 """
-
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
