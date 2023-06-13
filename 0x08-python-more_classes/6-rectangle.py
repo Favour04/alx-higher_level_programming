@@ -11,13 +11,16 @@ class Rectangle:
    Class containing the attributes of a
    Square
     """
-    al = []
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
+        Rectangle.number_of_instances += 1
 
-        #all instance of class beign stored
-        Rectangle.al.append(self)
+    def __del__(self):
+        print("bye rectangle...")
+        Rectangle.number_of_instances -= 1
 
     @property
     def width(self):
@@ -44,8 +47,7 @@ class Rectangle:
         self.__height = value
 
     def __str__(self):
-        return f"{'#' * self.width}\n" *\
-                (self.height - 1) + f"{'#' * self.width}"
+        return f"{Rectangle.number_of_instances}"
 
     def area(self):
         return self.width * self.height
@@ -59,11 +61,8 @@ class Rectangle:
     def __repr__(self):
         return f"Rectangle({self.width}, {self.height})"
 
+    """
     def __del__(self):
-        Rectangle.al.pop(self)
+        Rectangle.all.remove(self)
         print("Bye rectangle...")
-
-        @staticmethod
-        def number_of_instances(num=0):
-            num = len(Rectangle.al)
-            return num
+        """
