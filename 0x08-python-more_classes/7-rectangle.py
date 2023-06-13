@@ -44,8 +44,8 @@ class Rectangle:
         self.__height = value
 
     def __str__(self):
-        return f"{self.print_symbol * self.width}\n" *\
-                (self.height - 1) + f"{self.print_symbol * self.width}"
+        return f"{str(self.print_symbol) * self.width}\n" *\
+                (self.height - 1) + f"{str(self.print_symbol) * self.width}"
 
     def area(self):
         return self.width * self.height
