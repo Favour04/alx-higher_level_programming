@@ -1,6 +1,17 @@
 #!/usr/bin/python3
+"""
+    Module containg matrix
+    function
+"""
+
 
 def matrix_divided(matrix, div):
+    """
+        This function divide all
+        the numbers in the list
+        by div
+    """
+
     # Verify in matrix is a list of list to prevent error
     if not isinstance(matrix, list):
         raise TypeError('matrix must be a matrix\
@@ -29,7 +40,8 @@ def matrix_divided(matrix, div):
         raise TypeError('div must be a number')
     elif div == 0:
         raise ZeroDivisionError('division by zero')
-
+    if div == float('inf'):
+        raise ValueError('infinity wont be used')
     # divide each number in matrix by div
     new = []
     i = 0
