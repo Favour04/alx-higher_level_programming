@@ -1,0 +1,15 @@
+>>> MyList = __import__('1-my_list.py').MyList
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list
+[1]
+>>> my_list.append(0)
+>>> my_list
+[1, 0]
+>>> my_list.sort()
+>>> my_list
+[0, 1]
+>>> my_list.call()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'MyList' object has no attribute 'call'
