@@ -9,6 +9,10 @@
 >>> my_list.sort()
 >>> my_list
 [0, 1]
+>>> my_list.append(-1)
+>>> my_list.append(3)
+>>> my_list.print_sorted()
+[-1, 0, 1, 3]
 >>> my_list.call()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
