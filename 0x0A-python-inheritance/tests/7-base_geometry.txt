@@ -1,0 +1,38 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("my_int", 'aa')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/favour/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 28, in integer_validator
+    raise ValueError(f'{name} must be an integer')
+ValueError: my_int must be an integer
+>>> bg.integer_validator("my_int", 0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/favour/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 30, in integer_validator
+    raise ValueError(f'{name} must be greater than 0')
+ValueError: my_int must be greater than 0
+>>> bg.integer_validator("my_int", -1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/favour/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 30, in integer_validator
+    raise ValueError(f'{name} must be greater than 0')
+ValueError: my_int must be greater than 0
+>>> bg.area()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/favour/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 23, in area
+    raise Exception('area() is not implemented')
+Exception: area() is not implemented
+>>> bg.me()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'BaseGeometry' object has no attribute 'me'
+>>> bg.integer_validator("my_int", -1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/favour/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 30, in integer_validator
+    raise ValueError(f'{name} must be greater than 0')
+ValueError: my_int must be greater than 0
+>>> bg.integer_validator("my_int", 3)
