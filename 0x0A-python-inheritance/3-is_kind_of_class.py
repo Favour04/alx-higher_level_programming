@@ -10,7 +10,7 @@ a_class or inherited
 
 def is_kind_of_class(obj, a_class):
     """
-    The function as defined 
+    The function as defined
     in the doc above is wrr
     iten below
     """
