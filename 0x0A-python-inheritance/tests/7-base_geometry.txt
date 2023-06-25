@@ -5,8 +5,8 @@
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/home/favour/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 28, in integer_validator
-    raise ValueError(f'{name} must be an integer')
-ValueError: my_int must be an integer
+    raise TypeError(f'{name} must be an integer')
+TypeError: my_int must be an integer
 >>> bg.integer_validator("my_int", 0)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
