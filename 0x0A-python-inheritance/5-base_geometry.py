@@ -5,5 +5,10 @@ This module contain
 A class.
 """
 
+
 class BaseGeometry:
+    """
+    Empty class
+    """
+
     pass
