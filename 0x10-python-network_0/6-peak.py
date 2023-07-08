@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
     This module is
     contain the func
@@ -10,6 +11,10 @@
 
 
 def find_peak(list_of_numbers):
+    """
+        get the num with
+        hieghest peak
+    """
     if len(list_of_numbers) == 0:
         return None
     else:
